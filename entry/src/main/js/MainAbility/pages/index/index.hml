@@ -1,0 +1,25 @@
+<div class="container">
+    <div style="height: 60px; width: 75%;">
+        <stack style="height: 60px; width: 50%; border-radius: 15px;
+                background-color: {{ selected ? '#0000FF' : '#FFFFFF' }};" @click="select(true)">
+            <div style="width: 100%; height: 100%; justify-content: flex-end;">
+                <div style="height: 100%; width: 15px; background-color: {{ selected ? '#0000FF' : '#FFFFFF' }};"></div>
+            </div>
+
+            <div style="width: 100%; height: 100%; justify-content: center; align-items: center;">
+                <text style="font-size: 24px; color: {{ selected ? '#FFFFFF' : '#0000FF' }};">YES</text>
+            </div>
+        </stack>
+
+        <stack style="height: 60px; width: 50%; border-radius: 15px;
+                background-color: {{ selected ? '#FFFFFF' : '#0000FF' }};" @click="select(false)">
+            <div style="width: 100%; height: 100%; justify-content: flex-start;">
+                <div style="height: 100%; width: 15px; background-color: {{ selected ? '#FFFFFF' : '#0000FF' }};"></div>
+            </div>
+
+            <div style="width: 100%; height: 100%; justify-content: center; align-items: center;">
+                <text style="font-size: 24px; color: {{ selected ? '#0000FF' : '#FFFFFF' }};">NO</text>
+            </div>
+        </stack>
+    </div>
+</div>
